@@ -11,25 +11,26 @@
 
 <body class="bg-slate-400">
     <main class="container mx-auto px-4">
-        <img>
-        <h1>
-            LEARN KALEVALA
-        </h1>
-        <h3>
-            <time datetime="2022-04-11">
-                11.04.2022 at 7:11 AM
-            </time>
-        </h3>
-        <p class="text-xl text-red">
-            Learn Kalevala by heart -workshop
-        </p>
-        <p>
-        <details>
-            <summary>
-                Learning Kalevala by heart is an important, but extremelly difficult task...
-            </summary>
-            <h2>
-                Here's some samples of Kalevala
+        <div class="bg-cover p-10 my-10" style="background-image: url(./img/Sammon_puolustus.jpg);">
+            <h1 class="text-8xl font-extrabold text-white">
+                LEARN KALEVALA
+            </h1>
+            <h3 class="text-xl text-slate-300 font-semibold ml-20">
+                <time datetime="2022-04-11">
+                    11.04.2022 at 7:11 AM
+                </time>
+            </h3>
+        </div>
+        <div class="leading-7 mx-10">
+            <p class="text-3xl">
+                Learn Kalevala by heart -workshop
+            </p>
+            <p class="text-lg">
+                Learning Kalevala by heart is a nobel goal for any person. Join us in this three-year-long course!
+            </p>
+
+            <h2 class="text-3xl mt-6">
+                Here's more info of the course
             </h2>
             <p>
                 Mieleni minun tekevi, aivoni ajattelevi lähteäni laulamahan, saa'ani sanelemahan, sukuvirttä
@@ -41,7 +42,7 @@
                 yhtehen yhyttyämme, kahta'alta käytyämme! Harvoin yhtehen yhymme, saamme toinen toisihimme näillä
                 raukoilla rajoilla, poloisilla Pohjan mailla.
             </p>
-            <h3>
+            <h3 class="text-2xl mt-6">
                 This just keeps going...
             </h3>
             <p>
@@ -50,20 +51,32 @@
                 virsiä virittämiä vyöltä vanhan Väinämöisen, alta ahjon Ilmarisen, päästä kalvan Kaukomielen,
                 Joukahaisen jousen tiestä, Pohjan peltojen periltä, Kalevalan kankahilta.
             </p>
-            <h3>
+            <h3 class="text-2xl mt-6">
                 Here's a quote from Kalevala
             </h3>
-            <blockquote>
+            <blockquote class="italic">
                 Niit' ennen isoni lauloi kirvesvartta vuollessansa; niitä äitini opetti väätessänsä värttinätä, minun
                 lasna lattialla eessä polven pyöriessä, maitopartana pahaisna, piimäsuuna pikkaraisna. Sampo ei
                 puuttunut sanoja eikä Louhi luottehia: vanheni sanoihin sampo, katoi Louhi luottehisin, virsihin Vipunen
                 kuoli, Lemminkäinen leikkilöihin.
             </blockquote>
-        </details>
-        </p>
-        <h3>Price: 89 € / person</h3>
-        <button class="bg-green-700 rounded p-2 m-1 font-bold uppercase text-slate-100 hover:bg-green-600 active:scale-95">Register here</button>
-        <div id="modal"></div>
+        </div>
+
+        <h3 class="my-7 font-extrabold text-4xl">Price: 89 € / person</h3>
+        <div class="flex justify-center m-20">
+            <details>
+                <summary style="display: block;" class="bg-green-700 rounded px-20 py-5 m-1 mb-10 text-5xl font-bold uppercase text-slate-100 hover:bg-green-600 active:scale-95">
+                    Register here!
+                </summary>
+                <div id="modal" aria-hidden="true">
+                    <form class="flex flex-col w-2/6 justify-items-center mx-auto" action="./thankyou.html">
+                        <input type="text" required autocomplete="name" pattern="[A-Za-z]{2,32}" class="p-2"> name
+                        <input type="email" required autocomplete="email" class="p-2 mt-2"> email
+                        <input type="submit" value="SEND" class="bg-green-700 rounded px-10 py-5 m-1 text-3xl font-bold uppercase text-slate-100 hover:bg-green-600 active:scale-95">
+                    </form>
+                </div>
+            </details>
+        </div>
     </main>
 </body>
 
